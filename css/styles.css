@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #0099f6;
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: #f2c300;
+    text-align: center;
+    position: sticky;
+    padding: 25px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    background-color: #df0000;
+    color:#f2c300;
+    padding: 100px 0px;
+}
+
+/* --------------------------------------------------------------------------- */
+body {
+	font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+.container {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	overflow: auto;
+	/* Clearfix */
+}
+h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: #333;
+	text-align: center;
+}
+p {
+	text-align: justify;
+	font-size: 1.2em;
+	line-height: 1.6;
+	color: #666;
+}
+.container {
+	text-align: center;
+	padding: 1em;
+}
+.float-box {
+	width: 150px;
+	height: 150px;
+	margin: 1em;
+	text-align: center;
+	line-height: 150px;
+	font-size: 24px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+#box1 {
+	background: linear-gradient(to right, #6d0a0a, #a30909);
+	color: #f9f9f9;
+}
+#box2 {
+	color: #f9f9f9;
+	background: linear-gradient(to right, #15028f, #010531);
+}
+.float-box:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+```
+
+```js
+let states = {
+	box1: "none",
+	box2: "none",
+};
+
+function floatBox(boxId, titleId) {
+	let box = document.getElementById(boxId);
+	let title = document.getElementById(titleId);
+	if (states[boxId] === "none") {
+		box.style.float = "left";
+		title.innerHTML = "Box is floated to the left. This means it will move to the left-most side of its containing block and allow content to flow around its right side.";
+		states[boxId] = "left";
+	} else if (states[boxId] === "left") {
+		box.style.float = "right";
+		title.innerHTML = "Box is floated to the right. Now it jumps to the right-most side of its container, with content wrapping around its left.";
+		states[boxId] = "right";
+	} else {
+		box.style.float = "none";
+		title.innerHTML = "Box is not floated. It takes its natural place in the document layout, causing no wrap effect for the surrounding content.";
+		states[boxId] = "none";
+	}
+}
+
+#contact {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: #20B2AA;
+    padding: 60px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    color: #FFA000;
+}
+
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+.contact-email {
+    font-size: 1.2em;
+    color: #66FF66;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #FCE883;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #000099;
+    color: #6696FF;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #2A52BE;
+    color: #FFD800;  
+    padding: 20px; 
+    font-size: 1em;
+}
