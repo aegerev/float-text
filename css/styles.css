@@ -50,13 +50,13 @@ body {
 	font-family: "Lato", sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f4f4f4;
+	background-color: #df0000;
 }
 .container {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	margin: 20px;
-	background-color: #fff;
+	background-color: #0099f6;
 	border-radius: 8px;
 	overflow: auto;
 	/* Clearfix */
@@ -71,12 +71,13 @@ p {
 	text-align: justify;
 	font-size: 1.2em;
 	line-height: 1.6;
-	color: #666;
+	color: #f2c300;
 }
 .container {
 	text-align: center;
 	padding: 1em;
 }
+
 .float-box {
 	width: 150px;
 	height: 150px;
@@ -84,12 +85,12 @@ p {
 	text-align: center;
 	line-height: 150px;
 	font-size: 24px;
-	border: 1px solid #ccc;
+	border: 1px solid #00b844;
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
 #box1 {
-	background: linear-gradient(to right, #6d0a0a, #a30909);
+	background: linear-gradient(to right, #0099f6, #a30909);
 	color: #f9f9f9;
 }
 #box2 {
