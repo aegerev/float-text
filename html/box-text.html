@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/box-logic.js"></script>
+
+
+    <title>Floating Text And Boxes</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./box-text.html">ACTIVITY</a></li>
+            <li><a href="https://github.com/aegerev/float-text">VIEW GITHUB</a></li>
+        </ul>
+    </nav>
+
+    
+<div class="container">
+  <div class="example">
+    <h2 id="title1">Select the box to float it</h2>
+    <div class="float-box" id="box1" onclick="floatBox('box1', 'title1')">
+      Box 1
+    </div>
+    <div class="clearfix"></div>
+
+    <h1>Only Call Hooks At the Top Level</h1>
+    <p>
+      <ul>
+        <li>Do not call Hooks inside loops, conditions, or nested functions.</li>
+        <li>Always use Hooks at the top level of your React function component, before any early returns.</li>
+        <li>This rule ensures that Hooks are called in the same order each time a component renders, which is essential for React to correctly preserve the state of Hooks like useState and useEffect between renders.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="example">
+    <h2 id="title2">Select the box to float it</h2>
+    <div class="float-box" id="box2" onclick="floatBox('box2', 'title2')">
+      Box 2
+    </div>
+    <div class="clearfix"></div>
+    <h1>Only Call Hooks from React Functions</h1>
+    <p>
+      <ul>
+        <li>Do not call Hooks from regular JavaScript functions.</li>
+        <li>You can call Hooks from:
+          <ul>
+            <li>React function components.</li>
+            <li>Custom Hooks (which are themselves React functions that encapsulate reusable stateful logic).</li>
+          </ul>
+        </li>
+        
+        <li>This rule ensures that all stateful logic in a component is clearly visible and tied to the React component lifecycle.</li>
+      </ul>
+    </p>
+</div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Alexander Egerev. All rights reserved. </p>
+    </footer>
+    

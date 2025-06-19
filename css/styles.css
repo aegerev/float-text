@@ -80,6 +80,13 @@ p {
     color: #f6f5f3;
 }
 
+li {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #CDCDCD;
+}
+
 /* Float Box Styles */
 .float-box {
     width: 150px;
@@ -94,13 +101,13 @@ p {
 }
 
 #box1 {
-    background: linear-gradient(to right, #0099f6, #a30909);
+    background: #38B0DE;
     color: #f9f9f9;
 }
 
 #box2 {
     color: #f9f9f9;
-    background: linear-gradient(to right, #15028f, #010531);
+    background: #C0C0C0;
 }
 
 .float-box:hover {
