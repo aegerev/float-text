@@ -1,8 +1,15 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Keep Arial as the first choice, Lato is also good */
     margin: 0;
-    background-color: #2F4F4F;
+    background-color: #2F4F4F; /* Initial background color */
+}
+
+body {
+    font-family: "Lato", "Arial", sans-serif; /* Lato preferred, then Arial */
+    margin: 0;
+    padding: 0; /* Added padding: 0 from the second body rule */
+    background-color: #5F9F9F; /* This will be the final background color for the body */
 }
 
 
@@ -11,8 +18,10 @@ nav {
     background-color: #4D4DFF;
     text-align: center;
     position: sticky;
+    top: 0; /* Added 'top: 0;' for sticky positioning to work effectively */
     padding: 25px 0;
     margin-bottom: 20px;
+    z-index: 1000; /* Added z-index to ensure nav stays on top */
 }
 
 nav ul {
@@ -35,104 +44,76 @@ nav a {
 }
 
 nav a:hover {
-    color: #000000;
+    color: #00face;
 }
 
 header {
     text-align: center;
     background-color: #4D4DFF;
-    color:#000000;
+    color: #000000;
     padding: 100px 0px;
 }
 
-/* --------------------------------------------------------------------------- */
-body {
-	font-family: "Lato", sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #5F9F9F;
-}
+/* Container Styles */
 .container {
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	padding: 20px;
-	margin: 20px;
-	background-color: #0099f6;
-	border-radius: 8px;
-	overflow: auto;
-	/* Clearfix */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: #0099f6; /* This is an interesting color choice for a container */
+    border-radius: 8px;
+    overflow: auto; /* Clearfix for floats within the container */
+    text-align: center; /* This was a duplicate, combined here */
 }
+
 
 h1 {
-	font-size: 2em;
-	margin-bottom: 20px;
-	color: #333;
-	text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f6f5f3;
+    text-align: center;
 }
+
 p {
-	text-align: justify;
-	font-size: 1.2em;
-	line-height: 1.6;
-	color: #2F4F4F;
-}
-.container {
-	text-align: center;
-	padding: 1em;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #f6f5f3;
 }
 
+/* Float Box Styles */
 .float-box {
-	width: 150px;
-	height: 150px;
-	margin: 1em;
-	text-align: center;
-	line-height: 150px;
-	font-size: 24px;
-	border: 1px solid #00b844;
-	cursor: pointer;
-	transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    margin: 1em;
+    text-align: center;
+    line-height: 150px; /* Vertically center text in the box */
+    font-size: 24px;
+    border: 1px solid #00b844;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
 #box1 {
-	background: linear-gradient(to right, #0099f6, #a30909);
-	color: #f9f9f9;
+    background: linear-gradient(to right, #0099f6, #a30909);
+    color: #f9f9f9;
 }
+
 #box2 {
-	color: #f9f9f9;
-	background: linear-gradient(to right, #15028f, #010531);
+    color: #f9f9f9;
+    background: linear-gradient(to right, #15028f, #010531);
 }
+
 .float-box:hover {
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-```
-
-```js
-let states = {
-	box1: "none",
-	box2: "none",
-};
-
-function floatBox(boxId, titleId) {
-	let box = document.getElementById(boxId);
-	let title = document.getElementById(titleId);
-	if (states[boxId] === "none") {
-		box.style.float = "left";
-		title.innerHTML = "Box is floated to the left. This means it will move to the left-most side of its containing block and allow content to flow around its right side.";
-		states[boxId] = "left";
-	} else if (states[boxId] === "left") {
-		box.style.float = "right";
-		title.innerHTML = "Box is floated to the right. Now it jumps to the right-most side of its container, with content wrapping around its left.";
-		states[boxId] = "right";
-	} else {
-		box.style.float = "none";
-		title.innerHTML = "Box is not floated. It takes its natural place in the document layout, causing no wrap effect for the surrounding content.";
-		states[boxId] = "none";
-	}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* This box-shadow is identical to .container, might be redundant or intended for a specific effect. Keep it if intended. */
 }
 
+/* Footer Styles */
 footer {
     bottom: 0;
     width: 100%;
     text-align: center;
     background-color: #2A52BE;
-    color: #FFD800;  
-    padding: 20px; 
+    color: #FFD800;
+    padding: 20px;
     font-size: 1em;
 }
