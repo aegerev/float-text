@@ -1,17 +1,15 @@
-# CSS Floats and STAR TREK
+# CSS Floats and Readt's Rules of Hooks
 
-**Welcome to the USS Enterprise on your computer!**
-
-Here, you'll learn about Star Trek: The Original Series - what it is and the main cast. You'll also see how the floats in HTML work.
+Here, you'll learn about the Rules of Hooks in React - what it is and the main rules. You'll also see how the floats in HTML work.
 
 ## Project Goals:
-* Introduce the classic Star Trek: The Original Series to new audiences.
+* Introduce the Rules of Hooks in React to new audiences.
 * Demonstrate the use of CSS floats for layout and design.
 
 ## Features:
-    * Overview of Star Trek: The Original Series 
-    * Introduction to the TV show 
-    * Visual representation of the show and James T. Kirk using CSS floats 
+    * Overview of React Hooks 
+    * Introduction to the Rules of Hooks in React
+    * Visual representation of the two main Rules of Hooks in React 
 
 ## Technologies Used:
 
@@ -25,4 +23,4 @@ Here, you'll learn about Star Trek: The Original Series - what it is and the mai
 * Explore the basic principles of web design and layout.
 
   
-© 2024 CBS Studios Inc., Paramount Pictures Corporation, and CBS Interactive Inc., Paramount companies. STAR TREK and related marks are trademarks of CBS Studios Inc. All Rights Reserved.
+© 2025 Alexander Egerev. All Rights Reserved.
